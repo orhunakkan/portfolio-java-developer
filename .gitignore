@@ -1,0 +1,3 @@
+# Project exclude paths
+/01-IoC-Bean-Annotation/target/
+/.idea
