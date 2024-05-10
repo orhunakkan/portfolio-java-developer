@@ -6,8 +6,6 @@ Goals
 
     Decoupling: Reduce dependencies between classes to enhance flexibility and maintainability.
     Abstraction: Introduce interfaces to abstract away implementation details and promote separation of concerns.
-    Dependency Injection: Implement dependency injection to allow components to be easily replaced or extended.
-    Readability: Ensure that the refactored code is clear and understandable for future developers.
 
 Refactored Structure
 
