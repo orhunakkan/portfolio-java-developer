@@ -29,7 +29,7 @@ public class RecipeServiceImpl implements RecipeService {
     }
 
     @Override
-    public boolean prepareRecipe() {
+    public void prepareRecipe() {
         Recipe recipe = new Recipe();
         recipe.setRecipeId(UUID.randomUUID());
         recipe.setName(faker.food().dish());
@@ -39,7 +39,6 @@ public class RecipeServiceImpl implements RecipeService {
         recipe.setIngredients(prepareIngredients());
         recipeRepository.saveRecipe(recipe);
         shareService.shareRecipe(recipe);
-        return true;
     }
 
     private List<Ingredient> prepareIngredients() {

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class InstagramShareServiceImpl implements ShareService {
 
     @Override
-    public boolean shareRecipe(Recipe recipe) {
+    public void shareRecipe(Recipe recipe) {
 
         System.out.println("Shared on Instagram!");
         System.out.println("RecipeType: " + recipe.getRecipeType());
@@ -19,9 +19,6 @@ public class InstagramShareServiceImpl implements ShareService {
                 System.out.println("    Ingredient Name: " + ingredients.getName() + " Quantity: " +
                         ingredients.getQuantity() + " " + ingredients.getQuantityType())
         );
-
         System.out.println("Preparation: \n" + "\t" + recipe.getPreparation());
-
-        return true;
     }
 }

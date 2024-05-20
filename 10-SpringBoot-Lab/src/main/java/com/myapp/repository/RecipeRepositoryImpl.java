@@ -12,7 +12,7 @@ public class RecipeRepositoryImpl implements RecipeRepository {
     List<Recipe> recipeList = new ArrayList<>();
 
     @Override
-    public boolean saveRecipe(Recipe recipe) {
-        return recipeList.add(recipe);
+    public void saveRecipe(Recipe recipe) {
+        recipeList.add(recipe);
     }
 }

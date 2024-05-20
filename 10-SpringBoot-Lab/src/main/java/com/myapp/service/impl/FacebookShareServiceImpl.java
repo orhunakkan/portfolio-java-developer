@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 public class FacebookShareServiceImpl implements ShareService {
 
     @Override
-    public boolean shareRecipe(Recipe recipe) {
+    public void shareRecipe(Recipe recipe) {
         System.out.println("Shared on Facebook!");
         System.out.println("RecipeType: " + recipe.getRecipeType());
         System.out.println("Recipe Name: " + recipe.getName());
@@ -22,6 +22,5 @@ public class FacebookShareServiceImpl implements ShareService {
         );
 
         System.out.println("Preparation: \n" + "\t" + recipe.getPreparation());
-        return true;
     }
 }

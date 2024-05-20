@@ -4,6 +4,6 @@ import com.myapp.model.Recipe;
 
 public interface RecipeRepository {
 
-    boolean saveRecipe(Recipe recipe);
+    void saveRecipe(Recipe recipe);
 
 }
