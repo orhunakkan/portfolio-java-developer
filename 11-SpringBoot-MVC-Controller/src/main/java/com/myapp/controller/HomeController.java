@@ -10,4 +10,14 @@ public class HomeController {
     public String methodHome() {
         return "home.html";
     }
+
+    @RequestMapping("/")
+    public String defaultHome() {
+        return "home.html";
+    }
+
+    @RequestMapping({"/index", "/login"})
+    public String home2() {
+        return "home.html";
+    }
 }
