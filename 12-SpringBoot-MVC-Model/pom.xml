@@ -9,14 +9,18 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.myapp</groupId>
-    <artifactId>MVC-Controller</artifactId>
+    <artifactId>MVC-Model</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>11-SpringBoot-MVC-Controller</name>
-    <description>11-SpringBoot-MVC-Controller</description>
+    <name>12-SpringBoot-MVC-Model</name>
+    <description>12-SpringBoot-MVC-Model</description>
     <properties>
         <java.version>21</java.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

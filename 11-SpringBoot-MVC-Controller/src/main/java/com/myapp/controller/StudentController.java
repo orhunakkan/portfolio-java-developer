@@ -10,5 +10,4 @@ public class StudentController {
     public String getStudentInfo() {
         return "student/welcome.html";
     }
-
 }
