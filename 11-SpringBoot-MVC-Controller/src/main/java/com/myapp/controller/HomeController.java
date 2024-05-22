@@ -20,4 +20,9 @@ public class HomeController {
     public String home2() {
         return "home.html";
     }
+
+    @RequestMapping("/student2")
+    public String getStudentInfo() {
+        return "student/welcome.html";
+    }
 }
