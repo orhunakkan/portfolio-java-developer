@@ -2,6 +2,7 @@ package com.myapp.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -24,6 +25,13 @@ public class CarController {
 
     @RequestMapping("/info3")
     public String carInfo3(@RequestParam(value = "carMake", required = false, defaultValue = "Audi") String make, Model model) {
+        model.addAttribute("make", make);
+        return "car/car-info";
+    }
+
+    // localhost:8080/info/honda
+    @RequestMapping("/info/{make}")
+    public String carInfo4(@PathVariable String make, Model model) {
         model.addAttribute("make", make);
         return "car/car-info";
     }
