@@ -21,9 +21,16 @@ public class StudentController {
     }
 
     @RequestMapping("/welcome")
-    public String welcomePage(@RequestParam int id) {
-        System.out.println(id);
+    public String welcomePage(@RequestParam String name) {
+        System.out.println(name);
         return "student/welcome";
+    }
+
+    @RequestMapping("/student-list")
+    public String studentTable(Model model) {
+        List<Student> students = DataGenerator.createStudents();
+        model.addAttribute("students", students);
+        return "student/student-list";
     }
 
 }

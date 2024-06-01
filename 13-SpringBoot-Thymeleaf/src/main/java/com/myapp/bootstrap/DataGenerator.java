@@ -15,6 +15,12 @@ public class DataGenerator {
                 new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(18, 40), faker.address().state()),
                 new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(18, 40), faker.address().state()),
                 new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(18, 40), faker.address().state()),
-                new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(18, 40), faker.address().state()));
+                new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(18, 40), faker.address().state()),
+                new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(18, 40), faker.address().state()),
+                new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(18, 40), faker.address().state()),
+                new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(18, 40), faker.address().state()),
+                new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(18, 40), faker.address().state()),
+                new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(18, 40), faker.address().state())
+        );
     }
 }
