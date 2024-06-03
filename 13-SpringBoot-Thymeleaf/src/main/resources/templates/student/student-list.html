@@ -15,6 +15,7 @@
         <td>Last Name</td>
         <td>Age</td>
         <td>State</td>
+        <td>Scholarship</td>
     </tr>
     </thead>
     <tbody>
@@ -23,9 +24,20 @@
         <td th:text="${student.lastName}"></td>
         <td th:text="${student.age}"></td>
         <td th:text="${student.state}"></td>
+        <td th:text="${student.age > 30 ? 'Eligible' : 'Not Eligible'}"></td>
     </tr>
     </tbody>
 </table>
+
+<div>
+    <span th:if="${students.get(0).state == 'Virginia'}">It is Virginia</span>
+    <span th:unless="${students.get(0).state == 'Virginia'}">It is not Virginia</span>
+</div>
+
+<!--Fragments-->
+
+<!--<div th:replace="/fragments/index :: footer-menu"></div>-->
+<!--<div th:replace="/fragments/index :: main-menu-menu"></div>-->
 
 </body>
 </html>
