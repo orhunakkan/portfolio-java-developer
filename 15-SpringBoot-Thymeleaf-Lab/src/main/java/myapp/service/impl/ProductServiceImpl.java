@@ -1,9 +1,8 @@
-package com.cydeo.service.impl;
+package myapp.service.impl;
 
-
-import com.cydeo.model.Product;
-import com.cydeo.repository.ProductRepository;
-import com.cydeo.service.ProductService;
+import myapp.model.Product;
+import myapp.repository.ProductRepository;
+import myapp.service.ProductService;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.cydeo.model;
+package myapp.model;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -9,8 +9,10 @@ import java.util.UUID;
 @Getter
 @Setter
 public class Product {
+
     private UUID id;
     private String name;
     private BigDecimal price;
     private Integer remainingQuantity;
+
 }

@@ -1,4 +1,4 @@
-package com.cydeo.model;
+package myapp.model;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -12,4 +12,5 @@ public class CartItem {
     private Product product;
     private Integer quantity;
     private BigDecimal totalAmount;
+
 }

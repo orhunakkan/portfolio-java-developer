@@ -1,4 +1,4 @@
-package com.cydeo.model;
+package myapp.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

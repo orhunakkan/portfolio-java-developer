@@ -1,8 +1,8 @@
-package com.cydeo.service.impl;
+package myapp.service.impl;
 
-import com.cydeo.model.Cart;
-import com.cydeo.service.CartService;
-import com.cydeo.service.ProductService;
+import myapp.model.Cart;
+import myapp.service.CartService;
+import myapp.service.ProductService;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -13,7 +13,6 @@ import java.util.UUID;
 public class CartServiceImpl implements CartService {
 
     public static Cart CART = new Cart(BigDecimal.ZERO, new ArrayList<>());
-
     private final ProductService productService;
 
     public CartServiceImpl(ProductService productService) {

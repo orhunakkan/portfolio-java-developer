@@ -1,13 +1,12 @@
-package com.cydeo.service;
+package myapp.service;
 
-
-import com.cydeo.model.Cart;
+import myapp.model.Cart;
 
 import java.util.UUID;
 
 public interface CartService {
 
     Cart addToCart(UUID productId, Integer quantity);
-
     boolean deleteFromCart(UUID productId);
+
 }
