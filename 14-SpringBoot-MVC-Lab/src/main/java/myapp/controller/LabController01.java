@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 public class LabController01 {
 
     @GetMapping("/lab")
-    public String lab(Model model) {
+    public String labList(Model model) {
         model.addAttribute("firstLab", "lab-01-Coupling");
         model.addAttribute("secondLab", "lab-04-IoC");
         model.addAttribute("thirdLab", "lab-03-DI");
@@ -22,7 +22,7 @@ public class LabController01 {
     }
 
     @GetMapping("/profile")
-    public String profile(Model model) {
+    public String getProfile(Model model) {
         Profile profile = new Profile();
         profile.setName("John");
         profile.setSurname("Doe");
@@ -36,6 +36,8 @@ public class LabController01 {
 
     @GetMapping("/login/{email}/{phoneNumber}")
     public String login(Model model, @PathVariable String email, @PathVariable String phoneNumber) {
+        model.addAttribute("email", email);
+        model.addAttribute("phoneNumber", phoneNumber);
         model.addAttribute("loginMessage", "Login Successful");
         return "login/login-info";
     }
