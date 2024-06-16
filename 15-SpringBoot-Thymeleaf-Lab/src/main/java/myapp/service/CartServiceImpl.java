@@ -1,8 +1,6 @@
-package myapp.service.impl;
+package myapp.service;
 
 import myapp.model.Cart;
-import myapp.service.CartService;
-import myapp.service.ProductService;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;

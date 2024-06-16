@@ -1,8 +1,7 @@
-package myapp.service.impl;
+package myapp.service;
 
 import myapp.model.Product;
 import myapp.repository.ProductRepository;
-import myapp.service.ProductService;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
