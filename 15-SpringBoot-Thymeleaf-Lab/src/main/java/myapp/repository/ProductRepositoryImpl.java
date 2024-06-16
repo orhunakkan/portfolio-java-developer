@@ -1,7 +1,6 @@
-package myapp.repository.impl;
+package myapp.repository;
 
 import myapp.model.Product;
-import myapp.repository.ProductRepository;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
