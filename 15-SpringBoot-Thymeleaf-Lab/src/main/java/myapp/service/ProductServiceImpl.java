@@ -4,7 +4,6 @@ import myapp.model.Product;
 import myapp.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -19,20 +18,19 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public boolean productCreate(Product product) {
-        //todo implement method
+        product.setId(UUID.randomUUID());
+        productRepository.save(product);
         return true;
     }
 
     @Override
     public List<Product> listProducts() {
-        //todo implement method
-        return new ArrayList<>();
+        return productRepository.findAll();
     }
 
     @Override
     public Product findProductById(UUID uuid) {
-        //todo implement method
-        return new Product();
+        return productRepository.findProductById(uuid);
     }
 
 }
