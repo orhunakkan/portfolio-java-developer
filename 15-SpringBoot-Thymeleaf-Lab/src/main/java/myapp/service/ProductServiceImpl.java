@@ -17,10 +17,9 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public boolean productCreate(Product product) {
+    public void productCreate(Product product) {
         product.setId(UUID.randomUUID());
         productRepository.save(product);
-        return true;
     }
 
     @Override

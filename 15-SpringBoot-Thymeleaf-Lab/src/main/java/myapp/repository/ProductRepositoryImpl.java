@@ -13,8 +13,8 @@ public class ProductRepositoryImpl implements ProductRepository {
     public static List<Product> PRODUCT_LIST = new ArrayList<>();
 
     @Override
-    public boolean save(Product product) {
-        return PRODUCT_LIST.add(product);
+    public void save(Product product) {
+        PRODUCT_LIST.add(product);
     }
 
     @Override

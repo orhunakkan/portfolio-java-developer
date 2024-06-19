@@ -7,10 +7,8 @@ import java.util.UUID;
 
 public interface ProductRepository {
 
-    boolean save(Product product);
-
+    void save(Product product);
     Product findProductById(UUID productId);
-
     List<Product> findAll();
 
 }
