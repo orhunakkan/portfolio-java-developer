@@ -1,8 +1,8 @@
 package myapp.bootstrap;
 
-import com.cydeo.enums.Cheese;
-import com.cydeo.enums.Sauce;
-import com.cydeo.enums.Topping;
+import myapp.enums.Cheese;
+import myapp.enums.Sauce;
+import myapp.enums.Topping;
 
 import java.util.Arrays;
 import java.util.List;
@@ -14,11 +14,8 @@ public class DataGenerator {
     public static List<Topping> toppingTypeList;
 
     static {
-
         cheeseTypeList = Arrays.asList(Cheese.values());
         sauceTypeList = Arrays.asList(Sauce.values());
         toppingTypeList = Arrays.asList(Topping.values());
-
     }
-
 }
