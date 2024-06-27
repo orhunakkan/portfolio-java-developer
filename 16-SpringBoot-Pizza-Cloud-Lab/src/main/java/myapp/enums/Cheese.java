@@ -6,11 +6,11 @@ public enum Cheese {
 
     private final String value;
 
-    Cheese(String value){
-        this.value=value;
+    Cheese(String value) {
+        this.value = value;
     }
 
-    public String getValue(){
+    public String getValue() {
         return value;
     }
 

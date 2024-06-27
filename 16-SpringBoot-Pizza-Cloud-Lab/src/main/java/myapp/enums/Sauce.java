@@ -6,11 +6,11 @@ public enum Sauce {
 
     private final String value;
 
-    Sauce(String value){
-        this.value=value;
+    Sauce(String value) {
+        this.value = value;
     }
 
-    public String getValue(){
+    public String getValue() {
         return value;
     }
 

@@ -6,11 +6,11 @@ public enum Topping {
 
     private final String value;
 
-    Topping(String value){
-        this.value=value;
+    Topping(String value) {
+        this.value = value;
     }
 
-    public String getValue(){
+    public String getValue() {
         return value;
     }
 

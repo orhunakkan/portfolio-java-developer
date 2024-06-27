@@ -1,9 +1,9 @@
 package myapp.model;
 
+import lombok.Data;
 import myapp.enums.Cheese;
 import myapp.enums.Sauce;
 import myapp.enums.Topping;
-import lombok.Data;
 
 import java.util.List;
 import java.util.UUID;
