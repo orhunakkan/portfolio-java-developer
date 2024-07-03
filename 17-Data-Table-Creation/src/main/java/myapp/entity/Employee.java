@@ -1,4 +1,4 @@
-package mpapp.entity;
+package myapp.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
