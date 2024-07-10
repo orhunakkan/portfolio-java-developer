@@ -34,7 +34,7 @@ public class Payment {
     @Enumerated(EnumType.STRING)
     private Status paymentStatus;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     private PaymentDetail paymentDetail;
 
 }
