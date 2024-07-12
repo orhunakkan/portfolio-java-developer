@@ -7,6 +7,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
+import java.sql.SQLOutput;
 import java.time.LocalDate;
 
 import static mpapp.enums.Status.SUCCESS;
@@ -33,5 +34,8 @@ public class DataGenerator implements CommandLineRunner {
 
         paymentRepository.save(payment01);
         paymentRepository.save(payment02);
+
+        System.out.println(paymentRepository.findById(2L).get().getAmount());
+        System.out.println(paymentRepository.findById(2L).get().getPaymentDetail().getCommissionAmount());
     }
 }
