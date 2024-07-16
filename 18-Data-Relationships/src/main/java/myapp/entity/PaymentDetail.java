@@ -1,4 +1,4 @@
-package mpapp.entity;
+package myapp.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;

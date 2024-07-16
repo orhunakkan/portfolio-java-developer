@@ -1,6 +1,6 @@
-package mpapp.repository;
+package myapp.repository;
 
-import mpapp.entity.Payment;
+import myapp.entity.Payment;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

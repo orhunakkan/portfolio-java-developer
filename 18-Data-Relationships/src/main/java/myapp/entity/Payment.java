@@ -1,10 +1,10 @@
-package mpapp.entity;
+package myapp.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import mpapp.enums.Status;
+import myapp.enums.Status;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

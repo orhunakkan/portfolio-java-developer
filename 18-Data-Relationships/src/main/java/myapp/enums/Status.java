@@ -1,4 +1,4 @@
-package mpapp.enums;
+package myapp.enums;
 
 public enum Status {
 
